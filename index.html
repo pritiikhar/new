@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="x-ua-compatible" content="ie-edge">
+		<title>Embox</title>
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/Icon_128.128.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+		<!-- Web Fonts  -->		
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&amp;display=swap" rel="stylesheet" type="text/css">
+		<!-- Vendor CSS -->
+		
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/css/animate.compat.css">	
+		<link rel="stylesheet" href="vendor/css/fontawesome-free/css/all.min.css">		
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">		
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">	
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+
+		<!-- Current Page CSS -->
+		<link rel="stylesheet" href="vendor/rs-plugin/css/settings.css">
+		<link rel="stylesheet" href="vendor/rs-plugin/css/layers.css">
+		<link rel="stylesheet" href="vendor/rs-plugin/css/navigation.css">
+		
+		<!-- Demo CSS -->
+
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skin-corporate-4.css">		<script src="master/style-switcher/style.switcher.localstorage.js"></script> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr.min.js"></script>
+		<script src="js/modernizr.js"></script>
+
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_2vAHvKVqynjmLaicIzkgU');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate a five digit number for the contactNumber variable
+                // this.contactNumber.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_vy7tcgg', 'template_2tgzlua', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+	</head>
+	<body class="one-page loading-overlay-showing" data-target="#header" data-spy="scroll" data-offset="100" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 500}">
+		<div class="loading-overlay">
+			<div class="bounce-loader">
+				<div class="bounce1"></div>
+				<div class="bounce2"></div>
+				<div class="bounce3"></div>
+			</div>
+		</div>
+		<div class="body">
+
+			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+				<div class="header-body">
+					<div class="header-container container">
+						<div class="header-row">
+							<div class="header-column">
+								<div class="header-row">
+									<div class="header-logo">
+										<a href="index.html">
+											<img alt="Embox" width="200" height="50" data-sticky-width="160" data-sticky-height="40" src="images/400.100.png">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="header-column justify-content-end">
+								<div class="header-row">
+									<div class="header-nav header-nav-line header-nav-top-line header-nav-top-line-with-border order-2 order-lg-1">
+										<div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+											<nav class="collapse">
+												<ul class="nav nav-pills" id="mainNav">
+													<li class="dropdown">
+														<a data-hash class="dropdown-item active" href="#home">
+															Home
+														</a>
+													</li>
+													<li>
+														<a data-hash class="dropdown-item" data-hash data-hash-offset="120" href="#aboutEmbox">
+															About Us
+														</a>
+													</li>
+													<li>
+														<a class="dropdown-item" data-hash data-hash-offset="68" href="#services">Services</a>
+													</li>
+													<li>
+														<a class="dropdown-item" data-hash data-hash-offset="120" href="#products">Products</a>
+													</li>
+													<li>
+														<a class="dropdown-item" data-hash data-hash-offset="120" href="#partners">Partners</a>
+													</li>
+													<li>
+														<a class="dropdown-item" data-hash data-hash-offset="75" href="#contact">Contact Us</a>
+													</li>
+												</ul>
+											</nav>
+										</div>
+										<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+											<i class="fas fa-bars"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div role="main" class="main" id="home">
+				<div class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">			
+					<div class="carousel-inner " >
+						<div class="carousel-item active" data-transition="fade">
+						  <img class="d-block w-100" src="images/slider-1.jpg" alt="First slide">
+						  <div class="black-overlay"></div>
+						</div>
+						<div class="carousel-item" data-transition="fade">
+						  <img class="d-block w-100" src="images/slider-2.jpg" alt="Second slide">
+						  <div class="black-overlay"></div>
+						</div>
+						<div class="carousel-item" data-transition="fade">
+							<img class="d-block w-100" src="images/slider-3.jpg" alt="Second slide">
+							<div class="black-overlay"></div>
+						</div>
+						<div class="carousel-item" data-transition="fade">
+							<img class="d-block w-100" src="images/slider-4.jpg" alt="Second slide">
+							<div class="black-overlay"></div>
+						</div>
+						<div class="carousel-item" data-transition="fade">
+							<img class="d-block w-100" src="images/slider-5.jpg" alt="Second slide">
+							<div class="black-overlay"></div>
+						</div>
+						<div class="carousel-item" data-transition="fade">
+							<img class="d-block w-100" src="images/slider-6.jpg" alt="Second slide">
+							<div class="black-overlay"></div>
+						</div>
+						<div class="carousel-item" data-transition="fade">
+							<img class="d-block w-100" src="images/slider-7.jpg" alt="Second slide">
+							<div class="black-overlay"></div>
+						</div>
+						<div class="carousel-item" data-transition="fade">
+							<img class="d-block w-100" src="images/slider-8.jpg" alt="Second slide">
+							<div class="black-overlay"></div>
+						</div>
+						<div class="carousel-item" data-transition="fade">
+							<img class="d-block w-100" src="images/slider-08.jpg" alt="Second slide">
+							<div class="black-overlay"></div>
+						</div>
+						<div class="carousel-item" data-transition="fade">
+							<img class="d-block w-100" src="images/slider-9.jpg" alt="Second slide">
+							<div class="black-overlay"></div>
+						</div>
+						<div class="carousel-item" data-transition="fade">
+							<img class="d-block w-100" src="images/slider-10.jpg" alt="Second slide">
+							<div class="black-overlay"></div>
+						</div>
+						<div class="carousel-item" data-transition="fade">
+							<img class="d-block w-100" src="images/slider-11.jpg" alt="Second slide">
+							<div class="black-overlay"></div>
+						</div>
+						<div class="carousel-item" data-transition="fade">
+							<img class="d-block w-100" src="images/slider-12.jpg" alt="Second slide">
+							<div class="black-overlay"></div>
+						</div>
+					</div>
+					<div class="carousel-caption">
+
+						<div class="caption-img-left"><img src="images/slide-title-border.png" alt=""></div>
+
+						<div class="tp-caption text-color-light font-weight-normal slider-head">WELCOME TO EMBOX</div>
+
+						<div class="caption-img-right"><img src="images/slide-title-border.png" alt="">
+						</div>	
+						<div class="tp-caption font-weight-extra-bold text-color-light negative-ls-2 type-animation" id="canvas"><span>We work on</span> 
+							<span href="" class="typewrite" data-period="2000" data-type='[ "Electronics", "IoT", "Software Development", "Software Testing", "Animation", "Graphics", "UI/UX Design", "Digital Marketing" ]'><span class="wrap"></span></span>
+						</div>
+						<div class="tp-caption font-weight-light text-center ml4">We work on what you need.
+						</div>
+						<div class="tp-caption font-weight-light text-center ml3">Curiosity Redefined... Engineering Redefined...
+						</div>
+						<a class="tp-caption btn btn-light-2 btn-outline btn-rounded font-weight-semibold landing-btn" href="#services">GET STARTED NOW!</a>
+					</div>
+				</div>
+				<section id="aboutEmbox" class="about-us section-height-3">
+					<div class="container">
+						<h2 class="font-weight-bold text-center mb-2">Who we are?</h2>
+						<div data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+							<div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-quotes-primary mb-0">
+								<blockquote class="about-us-blockquote">
+									<p class="text-color-dark text-5 line-height-5 mb-0 about-text ">We are the Tech Solutions firm, with the team of Enthusiastic
+									Engineering Experts, which work in the miscellaneous technological realm
+									to provide your business the Ingenious Solutions that focus on playing
+									a supportive role to your business and it's holistic growth.
+									</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="services" class="bg-color-grey-scale-1  my-5 py-3">
+					<div class="container">
+						<div class="services">
+							<h2 class="font-weight-bold text-center mb-2">Services</h2>
+							<div class="row pt-4">
+								<div class="col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
+									<div class="feature-box feature-box-style-2">
+										<div class="feature-box-icon">
+											<img src="images/icons8-processor-50.png">
+										</div>
+										<div class="feature-box-info">
+											<h4 class="font-weight-bold mb-2">Embedded Electronics</h4>
+											<p class="mb-4">Design & development of innovative custom Electronics products for the industrial, and consumer market
+											.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 appear-animation" data-appear-animation="fadeIn">
+									<div class="feature-box feature-box-style-2">
+										<div class="feature-box-icon services-icon">
+											<img src="images/icons8-wireless-cloud-access-50.png">
+										</div>
+										<div class="feature-box-info">
+											<h4 class="font-weight-bold mb-2">Internet of Things</h4>
+											<p class="mb-4">Ingenious IoT enabled Industrial and domestic automation solutions development.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+									<div class="feature-box feature-box-style-2">
+										<div class="feature-box-icon">
+											<img src="images/icons8-android-os-50.png">
+										</div>
+										<div class="feature-box-info">
+											<h4 class="font-weight-bold mb-2">Android App Development</h4>
+											<p class="mb-4">Robust Android application development services with the attractive user interface
+											.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-lg-3">
+								<div class="col-lg-4">
+									<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
+										<div class="feature-box-icon">
+											<img src="images/icons8-programming-50.png">
+										</div>
+										<div class="feature-box-info">
+											<h4 class="font-weight-bold mb-2">Web Development</h4>
+											<p class="mb-4">Do you need a website for your startup or business? Reach your audience via stunning websites with us.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="feature-box feature-box-style-2 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
+										<div class="feature-box-icon">
+											<img src="images/icons8-asteroid-50.png">
+										</div>
+										<div class="feature-box-info">
+											<h4 class="font-weight-bold mb-2">Graphics design & Animation</h4>
+											<p class="mb-4">Stunning graphic designs and Animations with our highly experienced and talented team as per your requirement.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
+									<div class="feature-box feature-box-style-2">
+										<div class="feature-box-icon">
+											<img src="images/icons8-site-quality-warranty-50.png">
+										</div>
+										<div class="feature-box-info">
+											<h4 class="font-weight-bold mb-2">Software Quality Assurance</h4>
+											<p class="mb-4">Modern quality assurance and software testing services provided by an independent software testing team.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row mt-lg-3">
+								<div class="col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="400">
+									<div class="feature-box feature-box-style-2">
+										<div class="feature-box-icon">
+											<img src="images/icons8-integrated-circuit-50.png">
+										</div>
+										<div class="feature-box-info">
+											<h4 class="font-weight-bold mb-2">Technical Training</h4>
+											<p class="mb-4">Whether you’re interested in changing the direction of your career, just starting out, or looking to stay on top of technology trends we can help you out.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-4 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+									<div class="feature-box feature-box-style-2">
+										<div class="feature-box-icon">
+											<img src="images/icons8-paid-search-50.png">
+										</div>
+										<div class="feature-box-info">
+											<h4 class="font-weight-bold mb-2">Digital marketing</h4>
+											<p class="mb-4">Creative and unique work which helps in developing brand awareness which directly influences the increase in revenue.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
+									<div class="feature-box feature-box-style-2">
+										<div class="feature-box-icon">
+											<img src="images/icons8-sustainable-energy-50.png">
+										</div>
+										<div class="feature-box-info">
+											<h4 class="font-weight-bold mb-2">Green Energy</h4>
+											<p class="mb-4">Various types of solar services like on-grid/off-grid solar system, solar water pump, solar street light, solar water heater, and many more
+											.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="products" class=" container">
+					<div class="products-block">
+						<h2 class="font-weight-bold mb-2 text-center">Products</h2>
+						<div class="col-lg-auto appear-animation" data-appear-animation="fadeInRightShorter">
+							<div id="products-carousel" class="owl-carousel owl-theme mb-0">
+								<div class="portfolio-item">
+									<div class="product product1">
+										<div class="product-img">
+											<img src="images/DigiGram-product.png" alt="Image">
+										</div>
+										<div class="product-content">
+											<h4>DigiGram</h4>
+											<p>Our nation can not be digitalized without villages in India. Digi-gram is one step towards the digital village idea in Maharashtra, which will help villagers to connect digitally to the world.</p> 
+											<div class="collapse multi-collapse" id="product1">
+												<p>Now villagers will be able to get information like market prices, panchayat notices & updates, agro news, job news, schemes by the governments, and much more using their phones.
+												</p>
+												<div class="row">
+													<div class="col text-center">
+														<a class="btn btn-quote btn-outline btn-rounded font-weight-semibold" href="#contact">Get quote</a>
+													</div>
+												</div>
+											</div>	
+											<a class="read-more-btn"  data-toggle="collapse" href="#product1" role="button" aria-expanded="false" aria-controls="product1">Read more</a>
+										</div>	
+									</div>
+								</div>
+								<div class="portfolio-item">
+									<div class="product">
+										<div class="product-img">
+											<img src="images/LED-product.jpg" alt="Image">
+										</div>
+										<div class="product-content">
+											<h4>DigiGram</h4>
+											<p>Our nation can not be digitalized without villages in India. Digi-gram is one step towards the digital village idea in Maharashtra, which will help villagers to connect digitally to the world.</p>
+											<div class="collapse multi-collapse" id="product4">	
+												<p>Now villagers will be able to get information like market prices, panchayat notices & updates, agro news, job news, schemes by the governments, and much more using their phones.
+												</p>
+												<div class="row">
+													<div class="col text-center">
+														<a class="btn btn-quote btn-outline btn-rounded font-weight-semibold" href="#contact">Get quote</a>
+													</div>
+												</div>
+											</div>
+											<a class="read-more-btn" data-toggle="collapse" href="#product4" role="button" aria-expanded="false" aria-controls="product4">Read more</a>
+										</div>	
+									</div>
+								</div>
+								<div class="portfolio-item">
+									<div class="product product2">
+										<div class="product-img">
+											<img src="images/Sanitary-equipments-product.jpg" alt="digital recruitment" >
+										</div>
+										<div class="product-content">
+											<h4>Sanitary Equipments</h4>		
+											<p>We are the designers and manufacturers of Sanitary devices like Automated Body Sanitizing Tunnel and Contactless Sanitizer Dispenser for Commercial and Industrial use.</p>
+											<div class="collapse multi-collapse" id="product2">
+												<p>In this age of new normal, the various sanitization processes have been automated with the help of the electronics automation units for the safety and hygiene of customers, employees, and staff at places like Hospitals, Corporate Offices, Industries, Banks, School & Colleges.
+												</p>
+												<div class="row">
+													<div class="col text-center">
+														<a class="btn btn-quote btn-outline btn-rounded font-weight-semibold" href="#contact">Get quote</a>
+													</div>
+												</div>
+											</div>
+											<a class="read-more-btn"  data-toggle="collapse" href="#product2" role="button" aria-expanded="false" aria-controls="product2">Read more</a>
+										</div>	
+									</div>
+								</div>
+								<div class="portfolio-item">
+									<div class="product product3">
+										<div class="product-img">
+											<img src="images/solor-equipments-product.jpg" alt="brexit" >
+										</div>
+										<div class="product-content">		
+											<h4>Solar Power Equipments</h4>			
+											<p>We provide various types of superior quality solar products & solar services like on-grid/off-grid solar systems, solar water pumps, solar street lights, solar water heaters,</p>
+											<div class="collapse multi-collapse" id="product3">
+												<p>and many more. Let's join us to make pollution-free solar energy for daily use. Our dedicated team of experts can provide timely delivery and supports our customers over the lifecycle of their installations with services that enable increased efficiency and guaranteed performance.
+												</p>
+												<div class="row">
+													<div class="col text-center">
+														<a class="btn btn-quote btn-outline btn-rounded font-weight-semibold" href="#contact">Get quote</a>
+													</div>
+												</div>
+											</div>
+											<a class="read-more-btn"  data-toggle="collapse" href="#product3" role="button" aria-expanded="false" aria-controls="product3">Read more</a>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="clients" class="section section-height-3 bg-color-grey-scale-1 border-0 m-0">
+					<div class="container feedback-block">
+						<h2 class="font-weight-bold text-center mb-2">Client Feedback</h2>
+						<div class="row">
+							<div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+								<div id="clientFeedback" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators feedback-indicators">
+										<li data-target="#clientFeedback" data-slide-to="0" class="active"></li>
+										<li data-target="#clientFeedback" data-slide-to="1"></li>
+										<li data-target="#clientFeedback" data-slide-to="2"></li>
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item active">
+											<div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-quotes-dark mb-0">
+												<div class="testimonial-author">
+													<img src="images/client-1.jpg" class="img-fluid rounded-circle" alt="">
+												</div>
+												<blockquote>
+												<p class="text-color-dark text-5 line-height-5 mb-0 feedback">I would personally like to appreciate all the hard work and diligent effort that you have put into completing the project "Digi Gram". It was your hard work and research that has given us a fruitful result eventually.
+												</p>
+												</blockquote>
+												<div class="testimonial-author">
+													<p><strong class="font-weight-extra-bold text-2">- Mr. V.R. Pandit, Gramsevak, Ajispur</strong></p>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-quotes-dark mb-0">
+												<div class="testimonial-author">
+													<img src="images/client-1.jpg" class="img-fluid rounded-circle" alt="">
+												</div>
+												<blockquote>
+												<p class="text-color-dark text-5 line-height-5 mb-0 feedback">On behalf of all the board of members and trustees in Sarvodaya bank society, I would like to thank you for your service for the Automatic body sanitizer machine. We understand and value your contribution in bringing the project to fruition.</p>
+												</blockquote>
+												<div class="testimonial-author">
+													<p><strong class="font-weight-extra-bold text-2">- Mr. H. Mata, Manager, Sarvodaya Co-op Society
+													</strong></p>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-item">
+											<div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-quotes-dark mb-0">
+												<div class="testimonial-author">
+													<img src="images/client-1.jpg" class="img-fluid rounded-circle" alt="">
+												</div>
+												<blockquote>
+												<p class="text-color-dark text-5 line-height-5 mb-0 feedback">We would like to appreciate your good work and the endless hours of service that you have dedicated to our village gram panchayat. Your devotion to work is inspiring to us. Thank you team Embox and best luck for your future.</p>
+												</blockquote>
+												<div class="testimonial-author">
+													<p><strong class="font-weight-extra-bold text-2">-  Mr. S. Gawande, Gramsevak, Shivani Road
+													</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="partners" class="container">
+					<div class="patrons-block">
+						<h2 class="font-weight-bold text-center py-2 mb-2">Our Patrons</h2>
+						<div class="row my-5">
+							<div class="col">
+								<div id="partners-carousel" class="owl-carousel owl-theme mb-0" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 1}, '768': {'items': 4}, '992': {'items': 4}, '1200': {'items': 4}}, 'autoplay': true, 'autoplayTimeout': 3000, 'dots': false}">
+									<div>
+										<img width="1024"  src="images/slider-black_taxavy_01.png" alt="">
+									</div>
+									<div>
+										<img width="1024"  src="images/digitalAnurag1 - Copy.jpg" alt="">
+									</div>
+									<div>
+										<img width="1024"  src="images/rvscriptlogo1 - Copy.png" alt="">
+									</div>
+									<div>
+										<img width="1024"  src="images/vcube Solar2 - Copy.jpeg" alt="">
+									</div>
+									<div>
+										<img width="1024"  src="images/krushi sarthi final  - Copy.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="section border-0 py-0 m-0">
+					<div class="row">
+						<div class="col-lg-6 p-0">
+							<section class="section section-height-3 section-primary h-100 m-0 border-0">
+								<div class="row justify-content-end m-0">
+									<div class="col-half-section col-half-section-right mb-5 appear-animation" data-appear-animation="fadeInRightShorter">
+										<h2 class="text-light text-7">Grow <strong>Together</strong></h2>
+										<div class="recent-posts">
+											<div class="grow-together">
+												<article>
+													<div class="pl-1">
+														<p class="font-weight-normal line-height-3 text-4">'Alone' we can do something; 'Together' we can do Anything. Due to the COVID-19 pandemic most of us are facing financial problems and want to do something new as a career. So, we are going to introduce our "Grow Together" scheme, in which "You" and "We" work together to reach the top of success hill.</p>
+														<p class="font-weight-normal line-height-3 text-4 text-light opacity-6">#Spread Opportunities #Spread Happiness #Embox #EmboxDotIn
+														</p>
+													</div>
+												</article>
+											</div>
+											<button type="button" class="tp-caption btn btn-light-2 btn-outline btn-rounded font-weight-semibold btn-contact-us" data-loading-text="Loading...">Get Connected</button>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="col-lg-6 p-0">
+							<section id="contact" class="section section-height-3 section-secondary h-100 m-0 border-0">
+								<div class="get-in-touch justify-content-end m-0">
+									<div class="col-half-section col-half-section-right mb-5 appear-animation" data-appear-animation="fadeInRightShorter">
+										<h2 class="text-light text-7">Get in touch</h2>
+										<form id="contact-form" class="contact-form form-style-2 pr-xl-5">
+											<div class="form-row">
+												<div class="form-group col">
+													<input type="text" name="userName" id="userName" maxlength="100" class="form-control text-white" placeholder="Enter your name" required>
+												</div>
+												<div class="form-group col">
+													<input type="text" name="contactNumber" id="contactNumber" maxlength="10" class="form-control text-white" placeholder="Enter your contact number" required>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-group col">
+													<input type="text" name="userEmail" id="userEmail" maxlength="100" class="form-control text-white" placeholder="Enter your email" required>
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-group col">
+													<textarea type="text" name="message" id="message" maxlength="5000" rows="4" class="form-control text-white" placeholder="Message" required></textarea>
+												</div>
+											</div>
+											<button type="submit" id="button" value="Send" class="btn btn-light-2 btn-outline btn-rounded font-weight-semibold btn-contact-us" data-loading-text="Loading...">Send</button>
+										</form>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
+			</div>
+			
+			<footer id="footer" class="mt-0">
+				<div class="container my-4">
+					<div class="row text-center text-lg-left justify-content-between py-4">
+						<div class="col-lg-auto appear-animation" data-appear-animation="fadeInRightShorter">
+							<div class="feature-box feature-box-style-2 d-block d-lg-flex mb-4 mb-lg-0">
+								<div class="feature-box-icon">
+									<i class="icon-location-pin icons text-color-light"></i>
+								</div>
+								<div class="feature-box-info pl-1">
+									<h5 class="font-weight-light text-color-light opacity-7 mb-0">ADDRESS</h5>
+									<p class="text-color-light font-weight-semibold mb-0 address"> Ganapati Nagar-2, Gaulkhed Road, Shegaon.
+									Dist- Buldhana. (MH) 444 203</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+							<div class="feature-box feature-box-style-2 d-block d-lg-flex mb-4 mb-lg-0 px-xl-4 mx-lg-5">
+								<div class="feature-box-icon">
+									<i class="icon-call-out icons text-color-light"></i>
+								</div>
+								<div class="feature-box-info pl-1 call-us">
+									<h5 class="font-weight-light text-color-light opacity-7 mb-0">CALL US NOW</h5>
+									<a href="tel:+918208094342" class="text-color-light font-weight-semibold text-decoration-none">+91 82080 94342</a>
+									<a href="tel:+918668306472 " class="text-color-light font-weight-semibold text-decoration-none">+91 86683 06472</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
+							<div class="feature-box feature-box-style-2 d-block d-lg-flex">
+								<div class="feature-box-icon">
+									<i class="icon-share icons text-color-light"></i>
+								</div>
+								<div class="feature-box-info pl-1">
+									<h5 class="font-weight-light text-color-light opacity-7 mb-0">FOLLOW US</h5>
+									<div>
+										<span class="social-icons-facebook"><a href="https://www.facebook.com/EmboxDotIn/" target="_blank" class="text-color-light font-weight-semibold" title="Facebook"><i class="mr-1 fab fa-facebook-f"></i> FACEBOOK</a></span>
+										<span class="social-icons-twitter pl-3"><a href="https://twitter.com/EmboxDotIn?s=09" target="_blank" class="text-color-light font-weight-semibold" title="Twitter"><i class="mr-1 fab fa-twitter"></i> TWITTER</a></span>
+										<span class="social-icons-linkedin pl-3"><a href="https://www.linkedin.com/company/emboxdotin" target="_blank" class="text-color-light font-weight-semibold" title="Linkedin"><i class="mr-1 fab fa-linkedin"></i>LINKEDIN</a></span>
+									</div>
+									<div>
+										<span class="social-icons-instagram"><a href="https://instagram.com/emboxdotin?igshid=wlesalukswmr" target="_blank" class="text-color-light font-weight-semibold" title="Linkedin"><i class="mr-1 fab fa-instagram"></i> INSTAGRAM</a></span>
+										<span class="social-icons-youtube pl-3"><a href="https://youtube.com/channel/UCpsg-91v3uTSr-oaJzbOAtQ" target="_blank" class="text-color-light font-weight-semibold" title="Youtube"><i class="mr-1 fab fa-youtube"></i>YOUTUBE</a></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright footer-copyright-style-2">
+					<div class="container py-2">
+						<div class="row text-center text-lg-left justify-content-between py-4">
+							<div class="col-lg-auto  mb-md-3 d-block d-lg-flex mb-4 mb-lg-0 ">
+								<p>© Copyright 2020. All Rights Reserved.</p>
+							</div>
+							<div class="col-lg-auto ">
+								<a href="index.html"><img width="120" height="26" src="images/350.75_white.png" alt="Embox"/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/jquery/jquery.min.js"></script>		
+		<script src="vendor/jquery/jquery.appear.min.js"></script>		
+		<script src="vendor/jquery/jquery.easing.min.js"></script>		
+		<script src="vendor/jquery/jquery.cookie.min.js"></script>		
+		<script src="master/style-switcher/style.switcher.js" id="styleSwitcherScript" data-base-path="" data-skin-src=""></script>		
+		<script src="vendor/popper.min.js"></script>		
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>		
+		<script src="vendor/common.min.js"></script>		
+		<script src="vendor/jquery/jquery.validate.min.js"></script>		
+		<script src="vendor/jquery/jquery.easypiechart.min.js"></script>		
+		<script src="vendor/jquery/jquery.gmap.min.js"></script>		
+		<script src="vendor/jquery/jquery.lazyload.min.js"></script>		
+		<script src="vendor/jquery.isotope.min.js"></script>		
+		<script src="vendor/owl.carousel/owl.carousel.min.js"></script>		
+		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>		
+		<script src="vendor/jquery.vide.min.js"></script>		
+		<script src="vendor/vivus.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/animation.js"></script>
+		<!--(remove-empty-lines-end)-->
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>		<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+		<script type="text/javascript">
+		</script>
+
+	</body>
+</html>
